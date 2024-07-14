@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: Habitat
+  datasource:
+    url: jdbc:mysql://localhost:3306/wrkspot
+    username: root
+    password: Aayush@1999
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include : "*"
+    health:
+      show-details: always
+
